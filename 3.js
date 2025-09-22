@@ -1,0 +1,1 @@
+//rules for naming variables
