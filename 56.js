@@ -15,4 +15,5 @@ const user1 = {
         console.log(this.name, this.age);
     }
 }
+
 user1.about();
