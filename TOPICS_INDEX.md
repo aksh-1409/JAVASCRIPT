@@ -254,11 +254,293 @@ A comprehensive reference guide for all JavaScript topics covered in this direct
 
 ---
 
+## **this Keyword & Context**
+
+### **53.js** - this Keyword & use strict
+- `this` keyword in global context (window object)
+- `"use strict"` mode
+- Preventing global object access
+
+### **54.js** - call, apply & bind Methods
+- Sharing methods between objects
+- `call()` method with arguments
+- `apply()` method (arguments as array)
+- `bind()` method
+- Binding context to functions
+
+### **55.js** - Arrow Functions & this
+- Arrow functions don't bind `this`
+- `this` in arrow functions (takes from parent scope)
+- call, apply, bind with arrow functions
+
+### **56.js** - Object Method Shorthand
+- Shorthand method syntax in objects
+- `this` binding in shorthand methods
+
+---
+
+## **Object-Oriented Programming**
+
+### **57.js** - Factory Functions
+- Creating objects with factory functions
+- Function returning objects
+- Creating multiple similar objects
+
+### **58.js** - Optimizing Factory Functions
+- Extracting common methods
+- Creating separate method objects
+- Reducing code duplication
+
+### **59.js** - Factory Function Problems
+- Issues with adding new methods
+- Need for better solution (prototype chain)
+
+### **60.js** - Object.create() & Prototype Chain
+- `Object.create()` method
+- `__proto__` property
+- Prototype chain explained
+- How property lookup works
+
+### **61.js** - Factory Functions with Prototypes
+- Using `Object.create()` with factory functions
+- Setting up prototype chain manually
+
+### **62.js** - Function Prototype Property
+- Functions as objects
+- `prototype` property of functions
+- Adding properties to function prototype
+- Difference between objects and functions
+
+### **63.js** - Using Function Prototype
+- Adding methods to function prototype
+- Using `createUser.prototype`
+- Prototype-based method sharing
+
+### **64.js** - new Keyword
+- How `new` keyword works
+- Creates empty object
+- Sets `__proto__` property
+- Returns the object
+
+### **65.js** - Constructor Functions
+- Constructor function pattern
+- Using `new` with constructor functions
+- Adding methods to prototype
+
+### **66.js** - hasOwnProperty Method
+- Iterating over object properties
+- `hasOwnProperty()` method
+- Filtering out prototype properties
+
+### **67.js** - Array Constructor & Prototype
+- Array constructor with `new`
+- Array literals vs constructor
+- Array prototype chain
+
+---
+
+## **ES6 Classes**
+
+### **68.js** - Class Keyword
+- ES6 class syntax
+- `constructor` method
+- Class methods
+- Classes are syntactic sugar
+- Creating instances with `new`
+- Checking prototype
+
+### **69.js** - Class Inheritance (Introduction)
+- Code duplication problem
+- Need for inheritance
+
+### **70.js** - extends Keyword
+- `extends` keyword for inheritance
+- Inheriting from parent class
+
+### **71.js** - super Keyword
+- `super()` in constructor
+- Calling parent constructor
+- Adding child-specific properties
+- Child-specific methods
+
+### **72.js** - Method Overriding
+- Overriding parent methods in child class
+- Method resolution in inheritance
+
+### **73.js** - Getters & Setters
+- `get` keyword for getters
+- `set` keyword for setters
+- Computed properties with getters/setters
+
+### **74.js** - Static Methods & Properties
+- `static` keyword
+- Static methods
+- Static properties
+- Accessing static members
+
+---
+
+## **DOM Manipulation**
+
+### **75.js** - textContent vs innerText
+- `textContent` property
+- `innerText` property
+- Difference with hidden elements (display: none)
+
+### **76.js** - Selecting Elements & Collections
+- `getElementsByClassName()` - returns HTMLCollection
+- `querySelectorAll()` - returns NodeList
+- Array-like objects
+- Looping through collections
+- Converting to array with `Array.from()`
+
+### **77.js** - classList Property
+- `classList` property (DOMTokenList)
+- `add()`, `remove()`, `contains()` methods
+- `toggle()` method
+
+### **78.js** - innerHTML Property
+- `innerHTML` property
+- Updating HTML content
+- Performance issues with repeated updates
+- When to use innerHTML
+
+### **79.js** - prepend & append Methods
+- `prepend()` - add at start
+- `append()` - add at end
+
+### **80.js** - before & after Methods
+- `before()` method
+- `after()` method
+- Inserting elements relative to existing ones
+
+### **81.js** - Static vs Live Lists
+- NodeList (static list) from `querySelectorAll()`
+- HTMLCollection (live list) from `getElementsByClassName()`
+- Difference in behavior when DOM changes
+
+### **83.js** - Element Dimensions
+- `getBoundingClientRect()` method
+- Getting element dimensions (height, width)
+- Element position information
+
+---
+
+## **Events**
+
+### **84.js** - Event Object
+- How browser creates event objects
+- Event handler functions
+- Event object passed as argument
+
+### **85.js** - Keyboard & Mouse Events
+- `keypress` event
+- `mouseover` event
+- `mouseleave` event
+- Event listeners on body and elements
+
+### **86.js** - Event Capturing & Bubbling
+- Event capture phase (top-down)
+- Event bubbling phase (bottom-up)
+- Third argument in `addEventListener()` for capture
+
+---
+
+## **Asynchronous JavaScript**
+
+### **87.js** - setTimeout & clearTimeout
+- `setTimeout()` function
+- Asynchronous programming concept
+- Non-blocking code execution
+- `clearTimeout()` to cancel timeout
+- Callback queue and call stack
+
+### **88.js** - setInterval & clearInterval
+- `setInterval()` function
+- Repeating function calls
+- `clearInterval()` to stop interval
+
+### **90.js** - Callback Hell
+- Nested callbacks
+- Pyramid of doom
+- Readability issues
+
+### **91.js** - Callback Hell with Error Handling
+- Callbacks with success and failure handlers
+- Complex nested structure
+
+### **92.js** - Promises
+- `Promise` constructor
+- `resolve` and `reject`
+- `.then()` method
+- `.catch()` method
+- Microtask queue
+- Promise priority over setTimeout
+
+### **93.js** - Promises to Solve Callback Hell
+- Refactoring callback hell with promises
+- Promise chaining
+- Cleaner asynchronous code
+
+### **94.js** - Fetch API
+- `fetch()` function
+- Making HTTP requests
+- Handling response
+- `.json()` method
+- Error handling with fetch
+
+### **95.js** - async/await
+- `async` keyword
+- `await` keyword
+- Asynchronous programming with async/await
+- Error handling with try-catch
+- Cleaner syntax than promises
+
+---
+
+## **ES6 Modules**
+
+### **96.js** - ES6 Module Imports
+- `import` statement
+- Named imports with `{}`
+- Importing with alias (`as` keyword)
+- Default imports (without `{}`)
+- Multiple imports from same file
+
+### **97.js** - Named Exports
+- `export` keyword
+- Named exports
+- Exporting variables
+
+### **98.js** - Simple Named Export
+- Inline export syntax
+
+### **99.js** - Exporting Classes
+- Exporting classes with named export
+
+### **100.js** - Default Export
+- `export default` syntax
+- Default export for classes
+
+### **101.js** - Single Default Export Rule
+- Only one default export per file
+- Default export limitations
+
+### **102.js** - Mixing Default & Named Exports
+- Combining default and named exports
+- Importing both types together
+
+---
+
 ## **Empty/Placeholder Files**
 
 ### **23.js** - Empty file
 
 ### **52.js** - Empty file
+
+### **82.js** - Empty file
+
+### **89.js** - Empty file
 
 ---
 
@@ -273,8 +555,15 @@ A comprehensive reference guide for all JavaScript topics covered in this direct
 **Objects:** 34, 35, 36, 37, 50, 51  
 **Functions:** 38, 39, 40, 41, 42, 43, 44, 45  
 **Advanced:** 48, 49  
+**this & Context:** 53, 54, 55, 56  
+**OOP (Object-Oriented):** 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67  
+**ES6 Classes:** 68, 69, 70, 71, 72, 73, 74  
+**DOM Manipulation:** 75, 76, 77, 78, 79, 80, 81, 83  
+**Events:** 84, 85, 86  
+**Asynchronous JS:** 87, 88, 90, 91, 92, 93, 94, 95  
+**ES6 Modules:** 96, 97, 98, 99, 100, 101, 102  
 
 ---
 
-**Total Files:** 52  
-**Last Updated:** October 28, 2025
+**Total Files:** 102  
+**Last Updated:** November 5, 2025
