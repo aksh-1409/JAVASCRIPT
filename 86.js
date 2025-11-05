@@ -1,0 +1,2 @@
+//browser me event cycle top-down me capture event hai voh run hote hai uske baade bottom se phir event bubbling hoti hai 
+//or event capture k liye capture true pass karna hai 3 argument addEventListener me
