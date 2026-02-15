@@ -16,7 +16,7 @@ function changeText(element,text,color,time){
             },time)
         }else{
             reject();
-        }
+        }                                                      
     })
 }
 
