@@ -13,7 +13,7 @@ const friedRicePromise = new Promise((resolve,reject)=>{
 
 friedRicePromise.then(
     //jab promise se resolve hogha toh
-    (resolve)=>{
+    (resolve)=>{ 
         console.log(resolve);
 }, 
 //jab promise se reject hogha toh
